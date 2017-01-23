@@ -17,9 +17,12 @@ class Manager extends Employee {
     }
 
     fireEmployees(firedEmployee) {
-        // let arg = [];
         this.employees = this.employees.filter(x => x.name != firedEmployee)
         return this.employees  
+    }
+    
+    // longer version
+        // let arg = [];
         // for (let i = 0; i < this.employees.length; i++) {
         //     if (this.employees[i].name != firedEmployee) {
         //         arg.push(this.employees[i])
@@ -27,11 +30,10 @@ class Manager extends Employee {
         // }
         // this.employees = arg;
         // return this.employees;
-    }
-}
+    
 
 
-let Zoki = new Employee("Zoki", "Sportskadafati");
+let Zoki = new Employee("Zoki", "IT");
 let Neno = new Employee("Neno", "Director");
 let filip = new Employee("Filip", "Web Development");
 let leo = new Employee("Leo", "Web Development");
